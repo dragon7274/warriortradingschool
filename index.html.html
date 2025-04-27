@@ -1,0 +1,1106 @@
+https://raw.githubusercontent.com/dragon7274/trading/refs/heads/main/OPTION%20TRADING.png<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior Trading School - Unlock Profitable Trading</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for animations and effects */
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+        }
+        
+        .course-card {
+            transition: all 0.3s ease;
+            background: linear-gradient(to bottom right, #16213e, #1a1a2e);
+        }
+        
+        .indicator-card {
+            transition: all 0.3s ease;
+            background: linear-gradient(to bottom right, #1a1a2e, #16213e);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-800/90 backdrop-blur-md fixed w-full z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="#" class="text-2xl font-bold text-blue-400 flex items-center">
+                            <i class="fas fa-chart-line mr-2"></i>
+                            Warrior Trading School
+                        </a>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-white">Home</a>
+                            <a href="#courses" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white">Courses</a>
+                            <a href="#indicators" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white">Indicators</a>
+                            <a href="#about" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white">About</a>
+                            <a href="#support" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white">Support</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <a href="#checkout" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">
+                            <i class="fas fa-shopping-cart mr-1"></i> My Cart
+                        </a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900">Home</a>
+                <a href="#courses" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Courses</a>
+                <a href="#indicators" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Indicators</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">About</a>
+                <a href="#support" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Support</a>
+                <a href="#checkout" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+                    <i class="fas fa-shopping-cart mr-1"></i> My Cart
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Welcome to <span class="text-blue-400">Warrior Trading School</span></h1>
+                    <p class="text-xl text-gray-300 mb-8">Unlock profitable trading with our expert courses and premium TradingView indicators. Transform your trading strategy today.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#courses" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition duration-300 text-center">
+                            <i class="fas fa-graduation-cap mr-2"></i> Explore Courses
+                        </a>
+                        <a href="#indicators" class="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg text-lg font-semibold transition duration-300 text-center">
+                            <i class="fas fa-chart-bar mr-2"></i> Explore Indicators
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 animate-fade-in delay-1">
+                    <div class="relative">
+                        <div class="absolute -inset-2 bg-blue-600 rounded-xl blur opacity-75"></div>
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Trading Charts" 
+                             class="relative rounded-xl shadow-2xl w-full h-auto border-2 border-blue-500/20">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="animate-fade-in delay-1">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">5,000+</div>
+                    <div class="text-gray-300 uppercase text-sm tracking-wider">Students Trained</div>
+                </div>
+                <div class="animate-fade-in delay-2">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">15+</div>
+                    <div class="text-gray-300 uppercase text-sm tracking-wider">Years Experience</div>
+                </div>
+                <div class="animate-fade-in delay-1">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">4.9★</div>
+                    <div class="text-gray-300 uppercase text-sm tracking-wider">Average Rating</div>
+                </div>
+                <div class="animate-fade-in delay-2">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">24/7</div>
+                    <div class="text-gray-300 uppercase text-sm tracking-wider">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Premium <span class="text-blue-400">Trading Courses</span></h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Comprehensive training programs designed to take you from beginner to expert trader</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="course-card rounded-xl overflow-hidden shadow-lg border border-gray-800 card-hover animate-fade-in delay-1">
+                    <div class="relative">
+                        <img src="https://raw.githubusercontent.com/dragon7274/trading/refs/heads/main/Master%20The%20Art%20Of%20OPTION%20Trading.png" 
+                             alt="Master Swing Trading" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded">
+                            BESTSELLER
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Master Swing Trading</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-400 text-sm ml-2">4.8 (1,234)</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">Master swing trading with a comprehensive curriculum covering foundations, technical analysis, trade identification, risk management, execution strategies, and psychological discipline. Learn to capture profits in days to weeks across all market conditions.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold">₹14,990</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">₹19,990</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 add-to-cart" data-id="1" data-name="Master Swing Trading" data-price="14990">
+                                <i class="fas fa-cart-plus mr-1"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="course-card rounded-xl overflow-hidden shadow-lg border border-gray-800 card-hover animate-fade-in delay-2">
+                    <div class="relative">
+                        <img src="https://raw.githubusercontent.com/dragon7274/trading/refs/heads/main/Wealth%20Builder%20Stock%20Trading%20Blueprints.png" 
+                             alt="Wealth Builder" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">
+                            NEW
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Wealth Builder: Stock Trading Blueprint</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-400 text-sm ml-2">5.0 (876)</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">Transform from beginner to confident trader in 12 weeks with modules on stock market fundamentals, technical analysis, high-probability setups, risk management, pro execution, and long-term wealth-building strategies.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold">₹89,990</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">₹99,990</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 add-to-cart" data-id="2" data-name="Wealth Builder: Stock Trading Blueprint" data-price="89990">
+                                <i class="fas fa-cart-plus mr-1"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="course-card rounded-xl overflow-hidden shadow-lg border border-gray-800 card-hover animate-fade-in delay-3">
+                    <div class="relative">
+                        <img src="https://raw.githubusercontent.com/dragon7274/trading/refs/heads/main/OPTION%20TRADING%20s.png" 
+                             alt="Options Trading Mastery" 
+                             class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Options Trading Mastery</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-400 text-sm ml-2">4.5 (567)</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">Become a skilled options trader with lessons on fundamentals, profitable strategies (covered calls, credit spreads, iron condors), technical analysis, risk management, pro execution, and building a trading business.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold">₹24,990</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">₹29,990</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 add-to-cart" data-id="3" data-name="Options Trading Mastery" data-price="24990">
+                                <i class="fas fa-cart-plus mr-1"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 animate-fade-in">
+                <a href="#courses" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold">
+                    View All Courses <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Indicators Section -->
+    <section id="indicators" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Premium <span class="text-blue-400">TradingView Indicators</span></h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Enhance your trading with our exclusive, powerful indicators for TradingView</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Indicator 1 -->
+                <div class="indicator-card rounded-xl overflow-hidden shadow-lg border border-gray-700 card-hover animate-fade-in delay-1">
+                    <div class="relative">
+                        <img src="https://raw.githubusercontent.com/dragon7274/trading/refs/heads/main/Dragon%20BullS%20Way%20Indicator.png" 
+                             alt="Dragon Volume Strength Indicator" 
+                             class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Dragon Volume Strength Indicator</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-400 text-sm ml-2">5.0 (892)</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">Visualize trading activity with Value Area (VA), Point of Control (POC), and Volume Nodes to identify high-liquidity zones, plus Low Volume Nodes (LVNs) for weaker levels, ideal for volatile markets.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold">₹27,990</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 add-to-cart" data-id="4" data-name="Dragon Volume Strength Indicator" data-price="27990">
+                                <i class="fas fa-cart-plus mr-1"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Indicator 2 -->
+                <div class="indicator-card rounded-xl overflow-hidden shadow-lg border border-gray-700 card-hover animate-fade-in delay-2">
+                    <div class="relative">
+                        <img src="https://raw.githubusercontent.com/dragon7274/trading/refs/heads/main/Dynamic-Force.jpg" 
+                             alt="Dragon BullS Way Indicator" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">
+                            POPULAR
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Dragon BullS Way Indicator</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-400 text-sm ml-2">4.7 (1,542)</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">Provides accurate long/short signals with risk management features, suitable for all timeframes, enhancing your trading precision.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold">₹44,990</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">₹49,990</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 add-to-cart" data-id="5" data-name="Dragon BullS Way Indicator" data-price="44990">
+                                <i class="fas fa-cart-plus mr-1"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Indicator 3 -->
+                <div class="indicator-card rounded-xl overflow-hidden shadow-lg border border-gray-700 card-hover animate-fade-in delay-3">
+                    <div class="relative">
+                        <img src="https://raw.githubusercontent.com/dragon7274/trading/refs/heads/main/Dragon%20BullS%20Way%20Indicator.png" 
+                             alt="Warrior Trend Friend" 
+                             class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Warrior Trend Friend</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-400 text-sm ml-2">4.3 (456)</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">Offers real-time trend identification with clear entry/exit points and customizable alerts, perfect for trend-following strategies.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold">₹18,990</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition duration-300 add-to-cart" data-id="6" data-name="Warrior Trend Friend" data-price="18990">
+                                <i class="fas fa-cart-plus mr-1"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 animate-fade-in">
+                <a href="#indicators" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold">
+                    View All Indicators <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our <span class="text-blue-400">Students Say</span></h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Don't just take our word for it - hear from our successful students</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 animate-fade-in delay-1">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Riya Sharma">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-white">Riya Sharma</p>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic">"The Master Swing Trading course completely transformed my approach to the markets. Within 3 months, I was consistently profitable. The step-by-step guidance is worth every rupee!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 animate-fade-in delay-2">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/men/45.jpg" alt="Arjun Patel">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-white">Arjun Patel</p>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic">"Dragon BullS Way Indicator is hands down the best indicator I've ever used. The accuracy is incredible and it's paid for itself many times over. Customer support is also top-notch!"</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 animate-fade-in delay-3">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/men/68.jpg" alt="Vikram Singh">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-white">Vikram Singh</p>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic">"After taking the Wealth Builder course, I went from losing money to making consistent profits. The mentorship and community support make all the difference. Highly recommended!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-900 to-blue-700">
+        <div class="max-w-4xl mx-auto text-center animate-fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Trading?</h2>
+            <p class="text-xl text-blue-100 mb-8">Join thousands of successful traders who have already elevated their trading with our courses and indicators.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#courses" class="bg-white hover:bg-gray-100 text-blue-800 px-8 py-4 rounded-lg text-lg font-semibold transition duration-300">
+                    <i class="fas fa-graduation-cap mr-2"></i> Browse Courses
+                </a>
+                <a href="#indicators" class="bg-blue-800 hover:bg-blue-900 text-white px-8 py-4 rounded-lg text-lg font-semibold transition duration-300 border border-white/20">
+                    <i class="fas fa-chart-bar mr-2"></i> Explore Indicators
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About <span class="text-blue-400">Warrior Trading School</span></h2>
+                    <p class="text-gray-400 mb-4">Founded in 2010 by professional traders, Warrior Trading School has grown to become one of the most trusted names in trading education and tools.</p>
+                    <p class="text-gray-400 mb-6">Our mission is to democratize trading knowledge by providing high-quality, practical education and tools that help traders of all levels achieve consistent profitability.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-md bg-blue-600 text-white">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-400">15+ years combined trading experience</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-md bg-blue-600 text-white">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-400">5,000+ students trained worldwide</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-md bg-blue-600 text-white">
+                                    <i class="fas fa-check text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-400">Award-winning trading indicators</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 animate-fade-in delay-1">
+                    <div class="relative">
+                        <div class="absolute -inset-2 bg-blue-600 rounded-xl blur opacity-75"></div>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Trading Team" 
+                             class="relative rounded-xl shadow-2xl w-full h-auto border-2 border-blue-500/20">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">We're Here to <span class="text-blue-400">Help You</span></h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Our support team is available 24/7 to answer your questions</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Support Option 1 -->
+                <div class="bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-700 text-center animate-fade-in delay-1">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white mx-auto mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-white mb-2">Email Support</h3>
+                    <p class="text-gray-400 mb-4">Get detailed responses within 24 hours</p>
+                    <a href="mailto:warriortradingschool@gmail.com" class="text-blue-400 hover:text-blue-300 font-medium">
+                        warriortradingschool@gmail.com
+                    </a>
+                </div>
+                
+                <!-- Support Option 2 -->
+                <div class="bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-700 text-center animate-fade-in delay-2">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white mx-auto mb-4">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-white mb-2">Live Chat</h3>
+                    <p class="text-gray-400 mb-4">Instant help during business hours</p>
+                    <button class="text-blue-400 hover:text-blue-300 font-medium" id="live-chat-button">
+                        Start Live Chat <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+                
+                <!-- Support Option 3 -->
+                <div class="bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-700 text-center animate-fade-in delay-3">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white mx-auto mb-4">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-white mb-2">FAQs</h3>
+                    <p class="text-gray-400 mb-4">Find answers to common questions</p>
+                    <a href="#faq" class="text-blue-400 hover:text-blue-300 font-medium">
+                        Browse FAQs <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked <span class="text-blue-400">Questions</span></h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Get answers to common questions about our products and services</p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 animate-fade-in delay-1">
+                    <button class="faq-question w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-medium text-white">How do I access my purchased course or indicator?</span>
+                        <i class="fas fa-chevron-down text-blue-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-4 hidden">
+                        <p class="text-gray-400">After completing your purchase, you'll receive an email with a Google Drive link to access your course materials or indicator files. The email typically arrives within 15 minutes of purchase. If you don't see it, please check your spam folder or contact our support team at <a href="mailto:warriortradingschool@gmail.com">warriortradingschool@gmail.com</a>.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 animate-fade-in delay-2">
+                    <button class="faq-question w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-medium text-white">What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down text-blue-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-4 hidden">
+                        <p class="text-gray-400">We accept all major credit/debit cards (Visa, Mastercard, American Express), PayPal, and UPI payments for customers in India. All transactions are securely processed through our payment partners.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 animate-fade-in delay-3">
+                    <button class="faq-question w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-medium text-white">Do you offer refunds?</span>
+                        <i class="fas fa-chevron-down text-blue-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-4 hidden">
+                        <p class="text-gray-400">Due to the digital nature of our products, we generally don't offer refunds once the product has been accessed. However, if you encounter any issues with your purchase, please contact our support team at <a href="mailto:warriortradingschool@gmail.com">warriortradingschool@gmail.com</a> and we'll do our best to resolve the situation to your satisfaction.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 animate-fade-in delay-1">
+                    <button class="faq-question w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-medium text-white">Are the courses suitable for complete beginners?</span>
+                        <i class="fas fa-chevron-down text-blue-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-4 hidden">
+                        <p class="text-gray-400">Yes! Our courses are designed to take you from absolute beginner to confident trader. The Wealth Builder course in particular is structured for beginners, while our other courses clearly indicate the recommended prerequisite knowledge.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 animate-fade-in delay-2">
+                    <button class="faq-question w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-medium text-white">How do I install the TradingView indicators?</span>
+                        <i class="fas fa-chevron-down text-blue-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-4 hidden">
+                        <p class="text-gray-400">After purchase, you'll receive detailed installation instructions along with your indicator files. The process typically involves importing the script into TradingView's Pine Editor. Our support team at <a href="mailto:warriortradingschool@gmail.com">warriortradingschool@gmail.com</a> is also available to assist if you encounter any issues during installation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+            </div>
+            
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true"></span>
+            
+            <div class="inline-block align-bottom bg-gray-800 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                            <h3 class="text-lg leading-6 font-medium text-white mb-4" id="modal-title">
+                                <i class="fas fa-shopping-cart mr-2"></i> Your Shopping Cart
+                            </h3>
+                            
+                            <div class="mt-2">
+                                <div id="cart-items" class="space-y-4 mb-6">
+                                    <!-- Cart items will be added here dynamically -->
+                                    <div class="text-gray-400 text-center py-4" id="empty-cart-message">
+                                        Your cart is currently empty
+                                    </div>
+                                </div>
+                                
+                                <div class="border-t border-gray-700 pt-4 mb-4">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-lg font-medium text-white">Total:</span>
+                                        <span class="text-xl font-bold text-blue-400" id="cart-total">₹0</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-6">
+                                    <button type="button" id="checkout-button" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg text-lg font-semibold transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                                        Proceed to Checkout <i class="fas fa-arrow-right ml-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="button" id="close-cart" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-700 shadow-sm px-4 py-2 bg-gray-700 text-base font-medium text-gray-300 hover:bg-gray-600 focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        Continue Shopping
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Chat Modal -->
+    <div id="live-chat-modal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+            </div>
+            
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true"></span>
+            
+            <div class="inline-block align-bottom bg-gray-800 rounded-t-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 class="text-lg leading-6 font-medium text-white">
+                                    <i class="fas fa-comments mr-2"></i> Live Chat Support
+                                </h3>
+                                <button id="close-chat" class="text-gray-400 hover:text-white">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="bg-gray-900 rounded-lg p-4 h-64 overflow-y-auto mb-4" id="chat-messages">
+                                <div class="flex mb-4">
+                                    <div class="flex-shrink-0 mr-3">
+                                        <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJapHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Support Agent">
+                                    </div>
+                                    <div>
+                                        <div class="bg-gray-700 rounded-lg p-3">
+                                            <p class="text-sm text-white">Hello! Welcome to Warrior Trading School support. How can I help you today?</p>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mt-1">Support Agent • Just now</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <input type="text" id="chat-input" class="flex-1 bg-gray-700 border border-gray-600 rounded-l-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type your message...">
+                                <button id="send-chat" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-lg">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#courses" class="text-gray-300 hover:text-white">Courses</a></li>
+                        <li><a href="#indicators" class="text-gray-300 hover:text-white">Indicators</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Bundles</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Free Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Testimonials</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#support" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                        <li><a href="#faq" class="text-gray-300 hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Refund Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-blue-400 flex items-center">
+                        <i class="fas fa-chart-line mr-2"></i>
+                        Warrior Trading School
+                    </a>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center md:text-left">
+                <p class="text-gray-500 text-sm">© 2023 Warrior Trading School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg hidden transition-opacity duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (answer.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Shopping cart functionality
+        let cart = [];
+        
+        // Add to cart buttons
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const id = this.getAttribute('data-id');
+                const name = this.getAttribute('data-name');
+                const price = parseInt(this.getAttribute('data-price'));
+                
+                // Check if item already in cart
+                const existingItem = cart.find(item => item.id === id);
+                
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({
+                        id,
+                        name,
+                        price,
+                        quantity: 1
+                    });
+                }
+                
+                updateCart();
+                showCartNotification();
+            });
+        });
+        
+        // Update cart UI
+        function updateCart() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const emptyCartMessage = document.getElementById('empty-cart-message');
+            const cartTotalElement = document.getElementById('cart-total');
+            const checkoutButton = document.getElementById('checkout-button');
+            
+            // Calculate total
+            let total = 0;
+            cart.forEach(item => {
+                total += item.price * item.quantity;
+            });
+            
+            // Update cart items display
+            if (cart.length === 0) {
+                emptyCartMessage.classList.remove('hidden');
+                cartItemsContainer.innerHTML = '';
+                checkoutButton.disabled = true;
+            } else {
+                emptyCartMessage.classList.add('hidden');
+                
+                let itemsHTML = '';
+                cart.forEach(item => {
+                    itemsHTML += `
+                        <div class="flex justify-between items-center border-b border-gray-700 pb-4">
+                            <div>
+                                <h4 class="text-white font-medium">${item.name}</h4>
+                                <p class="text-gray-400 text-sm">₹${item.price.toLocaleString()}</p>
+                            </div>
+                            <div class="flex items-center">
+                                <button class="text-gray-400 hover:text-white decrease-quantity" data-id="${item.id}">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <span class="mx-3 text-white">${item.quantity}</span>
+                                <button class="text-gray-400 hover:text-white increase-quantity" data-id="${item.id}">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <button class="ml-4 text-red-400 hover:text-red-300 remove-item" data-id="${item.id}">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                cartItemsContainer.innerHTML = itemsHTML;
+                checkoutButton.disabled = false;
+                
+                // Add event listeners to new buttons
+                document.querySelectorAll('.decrease-quantity').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const id = this.getAttribute('data-id');
+                        const item = cart.find(item => item.id === id);
+                        
+                        if (item.quantity > 1) {
+                            item.quantity -= 1;
+                        } else {
+                            cart = cart.filter(item => item.id !== id);
+                        }
+                        
+                        updateCart();
+                    });
+                });
+                
+                document.querySelectorAll('.increase-quantity').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const id = this.getAttribute('data-id');
+                        const item = cart.find(item => item.id === id);
+                        item.quantity += 1;
+                        updateCart();
+                    });
+                });
+                
+                document.querySelectorAll('.remove-item').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const id = this.getAttribute('data-id');
+                        cart = cart.filter(item => item.id !== id);
+                        updateCart();
+                    });
+                });
+            }
+            
+            // Update total
+            cartTotalElement.textContent = `₹${total.toLocaleString()}`;
+        }
+        
+        // Show cart notification
+        function showCartNotification() {
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-20 right-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg flex items-center animate-fade-in';
+            notification.innerHTML = `
+                <i class="fas fa-check-circle mr-2"></i> Item added to cart
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.classList.add('opacity-0', 'transition-opacity', 'duration-300');
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            }, 3000);
+        }
+        
+        // Cart modal toggle
+        document.querySelectorAll('[href="#checkout"], #back-to-top').forEach(el => {
+            if (el.getAttribute('href') === '#checkout') {
+                el.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.getElementById('checkout-modal').classList.remove('hidden');
+                });
+            }
+        });
+        
+        document.getElementById('close-cart').addEventListener('click', function() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+        });
+        
+        // Checkout button
+        document.getElementById('checkout-button').addEventListener('click', function() {
+            alert('Proceeding to checkout with ' + cart.length + ' items. Total: ₹' + 
+                cart.reduce((total, item) => total + (item.price * item.quantity), 0).toLocaleString());
+        });
+        
+        // Live chat modal
+        document.getElementById('live-chat-button').addEventListener('click', function() {
+            document.getElementById('live-chat-modal').classList.remove('hidden');
+        });
+        
+        document.getElementById('close-chat').addEventListener('click', function() {
+            document.getElementById('live-chat-modal').classList.add('hidden');
+        });
+        
+        // Send chat message
+        document.getElementById('send-chat').addEventListener('click', function() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            
+            if (message) {
+                const chatMessages = document.getElementById('chat-messages');
+                
+                // Add user message
+                chatMessages.innerHTML += `
+                    <div class="flex mb-4 justify-end">
+                        <div class="max-w-xs">
+                            <div class="bg-blue-600 rounded-lg p-3">
+                                <p class="text-sm text-white">${message}</p>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1 text-right">You • Just now</p>
+                        </div>
+                    </div>
+                `;
+                
+                // Clear input
+                input.value = '';
+                
+                // Scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+                
+                // Simulate response after delay
+                setTimeout(() => {
+                    chatMessages.innerHTML += `
+                        <div class="flex mb-4">
+                            <div class="flex-shrink-0 mr-3">
+                                <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Support Agent">
+                            </div>
+                            <div>
+                                <div class="bg-gray-700 rounded-lg p-3">
+                                    <p class="text-sm text-white">Thank you for your message! Our support team will respond shortly. For faster assistance, you can also email us at <a href="mailto:warriortradingschool@gmail.com">warriortradingschool@gmail.com</a></p>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">Support Agent • Just now</p>
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Scroll to bottom again
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }, 1000);
+            }
+        });
+        
+        // Allow pressing Enter to send chat message
+        document.getElementById('chat-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('send-chat').click();
+            }
+        });
+        
+        // Back to top button
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Close modals when clicking outside
+        window.addEventListener('click', function(event) {
+            if (event.target === document.getElementById('checkout-modal')) {
+                document.getElementById('checkout-modal').classList.add('hidden');
+            }
+            
+            if (event.target === document.getElementById('live-chat-modal')) {
+                document.getElementById('live-chat-modal').classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
